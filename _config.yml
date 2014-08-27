@@ -21,7 +21,7 @@ fin_color:        "255,255,255"
 # Owner/author information
 owner:
   name:           Sandy Maguire
-  avatar:         hmfaysal.jpg
+  avatar:         sandy.jpg
   email:          sandy@sandymaguire.me
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    I am in Europe. It's chill.
@@ -37,14 +37,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: <i class="icon-book"></i> Documentation
-    url: /documentation
   - title: Categories
     url: /categories
-  - title: Tags
-    url: /tags
-  - title: Faysal who?
-    url: /hossain-mohd-faysal
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
@@ -74,7 +68,7 @@ kramdown:
 prose:
   rooturl: '_posts'
   siteurl: 'http://Paamayim.github.io/'
-  relativeLinks: 'http://hmfaysal.github.io/links.jsonp'
+  relativeLinks: 'http://Paamayim.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:

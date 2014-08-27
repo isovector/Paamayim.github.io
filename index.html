@@ -1,9 +1,8 @@
 ---
 layout: home
 title: Latest Posts
-description: "The personal blog of Hossain Mohd. Faysal, a doctoral candidate in Electrical Engineering at University of Pennsylvania."
-headline: An Engineer's Diary
-tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsylvania, doha, Qatar]
+description: "Sandy's Adventures in Europe"
+headline:
 ---
 {% if site.paginate %}
 	{% for post in paginator.posts %}
@@ -96,7 +95,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 	                        in <span class="post-tags">{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
 	                        <div class="post-body bordered-bottom"></div>
 	                    </div>
-	                </header>    
+	                </header>
 	            </article>
 	        </div>
 	        {% endif %}
@@ -216,11 +215,11 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 {% assign post_count = site.posts | size %}
 {% if post_count == 0 %}
 {% else %}
-{% if paginator.total_pages != 1 %} 
+{% if paginator.total_pages != 1 %}
 {% if paginator.total_pages < 7 %}
         <div class="page-body col-md-12">
           <ul class="pagination pagination-centered">
-            {% if paginator.total_pages >= 10 %} 
+            {% if paginator.total_pages >= 10 %}
             {% if paginator.previous_page %}
                 <li>
                   <a href="{{ site.url }}/">&laquo;&laquo;</a>
@@ -275,7 +274,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
                 <a>&raquo;</a>
               </li>
             {% endif %}
-            {% if paginator.total_pages >= 10 %} 
+            {% if paginator.total_pages >= 10 %}
             {% if paginator.next_page %}
               <li>
                 <a href="{{ site.url }}/page{{paginator.total_pages}}">&raquo;&raquo;</a>
@@ -304,10 +303,10 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 {% assign page_end = paginator.page | plus: 4 %}
 {% assign page_start = paginator.page %}
 {% endif %}
- 
+
 <div class="page-body col-md-12">
     <ul class="pagination pagination-centered">
-    {% if paginator.total_pages > 5 %} 
+    {% if paginator.total_pages > 5 %}
     {% if paginator.previous_page %}
         <li>
           <a href="{{ site.url }}/">&laquo;&laquo;</a>
@@ -366,7 +365,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
         <a>&raquo;</a>
       </li>
     {% endif %}
-    {% if paginator.total_pages > 5 %} 
+    {% if paginator.total_pages > 5 %}
     {% if paginator.next_page %}
       <li>
         <a href="{{ site.url }}/page{{paginator.total_pages}}">&raquo;&raquo;</a>
@@ -473,7 +472,7 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 	                        in <span class="post-tags">{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
 	                        <div class="post-body bordered-bottom"></div>
 	                    </div>
-	                </header>    
+	                </header>
 	            </article>
 	        </div>
 	        {% endif %}
@@ -589,5 +588,5 @@ tags: [Hossain, Mohd, Faysal, electrical, engineering, blog, university, pennsyl
 	            </article>
 	        </div>
 			{% endif %}
-	{% endfor %}  
+	{% endfor %}
 {% endif %}
